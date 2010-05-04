@@ -1,0 +1,90 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" id="menu" version="2.0">
+	<jsp:output omit-xml-declaration="yes"/>
+	<ul id="roo_menu">
+			
+	<li id="web_mvc_jsp_meter_category">
+<h2>
+<spring:message code="menu.category.web_mvc_jsp_meter_category.label"/>
+</h2>
+<ul>
+<li id="web_mvc_jsp_create_meter_menu_item">
+<spring:url value="/meter/form" var="web_mvc_jsp_create_meter_menu_item_url"/>
+<a href="${web_mvc_jsp_create_meter_menu_item_url}">
+<spring:message code="label.meter" var="label_meter"/>
+<spring:message arguments="${label_meter}" code="global.menu.new"/>
+</a>
+</li>
+<li id="web_mvc_jsp_list_meter_menu_item">
+<spring:url value="/meter?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_meter_menu_item_url"/>
+<a href="${web_mvc_jsp_list_meter_menu_item_url}">
+<spring:message code="label.meters" var="label_meters"/>
+<spring:message arguments="${label_meters}" code="global.menu.list"/>
+</a>
+</li>
+</ul>
+</li>
+<li id="web_mvc_jsp_asset_category">
+<h2>
+<spring:message code="menu.category.web_mvc_jsp_asset_category.label"/>
+</h2>
+<ul>
+<li id="web_mvc_jsp_create_asset_menu_item">
+<spring:url value="/asset/form" var="web_mvc_jsp_create_asset_menu_item_url"/>
+<a href="${web_mvc_jsp_create_asset_menu_item_url}">
+<spring:message code="label.asset" var="label_asset"/>
+<spring:message arguments="${label_asset}" code="global.menu.new"/>
+</a>
+</li>
+<li id="web_mvc_jsp_list_asset_menu_item">
+<spring:url value="/asset?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_asset_menu_item_url"/>
+<a href="${web_mvc_jsp_list_asset_menu_item_url}">
+<spring:message code="label.assets" var="label_assets"/>
+<spring:message arguments="${label_assets}" code="global.menu.list"/>
+</a>
+</li>
+</ul>
+</li>
+<li id="web_mvc_jsp_location_category">
+<h2>
+<spring:message code="menu.category.web_mvc_jsp_location_category.label"/>
+</h2>
+<ul>
+<li id="web_mvc_jsp_create_location_menu_item">
+<spring:url value="/location/form" var="web_mvc_jsp_create_location_menu_item_url"/>
+<a href="${web_mvc_jsp_create_location_menu_item_url}">
+<spring:message code="label.location" var="label_location"/>
+<spring:message arguments="${label_location}" code="global.menu.new"/>
+</a>
+</li>
+<li id="web_mvc_jsp_list_location_menu_item">
+<spring:url value="/location?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_location_menu_item_url"/>
+<a href="${web_mvc_jsp_list_location_menu_item_url}">
+<spring:message code="label.locations" var="label_locations"/>
+<spring:message arguments="${label_locations}" code="global.menu.list"/>
+</a>
+</li>
+</ul>
+</li>
+<li id="web_mvc_jsp_facility_category">
+<h2>
+<spring:message code="menu.category.web_mvc_jsp_facility_category.label"/>
+</h2>
+<ul>
+<li id="web_mvc_jsp_create_facility_menu_item">
+<spring:url value="/facility/form" var="web_mvc_jsp_create_facility_menu_item_url"/>
+<a href="${web_mvc_jsp_create_facility_menu_item_url}">
+<spring:message code="label.facility" var="label_facility"/>
+<spring:message arguments="${label_facility}" code="global.menu.new"/>
+</a>
+</li>
+<li id="web_mvc_jsp_list_facility_menu_item">
+<spring:url value="/facility?page=${empty param.page ? 1 : param.page}&amp;amp;size=${empty param.size ? 10 : param.size}" var="web_mvc_jsp_list_facility_menu_item_url"/>
+<a href="${web_mvc_jsp_list_facility_menu_item_url}">
+<spring:message code="label.facilitys" var="label_facilitys"/>
+<spring:message arguments="${label_facilitys}" code="global.menu.list"/>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>

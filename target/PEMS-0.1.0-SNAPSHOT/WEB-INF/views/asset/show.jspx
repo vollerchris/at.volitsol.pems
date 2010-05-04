@@ -1,0 +1,28 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+<jsp:output omit-xml-declaration="yes"/>
+<script type="text/javascript">dojo.require('dijit.TitlePane');</script>
+<div id="_title_div">
+<spring:message code="label.asset" var="entity_label"/>
+<spring:message arguments="${entity_label}" code="entity.show" var="title_msg"/>
+<script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_title_div', widgetType : 'dijit.TitlePane', widgetAttrs : {title: '${title_msg}'}})); </script>
+<c:if test="${not empty asset}">
+<div id="roo_asset_assetName">
+<label for="_assetName_id">Asset Name:</label>
+<div class="box" id="_assetName_id">
+<c:out value="${asset.assetName}"/>
+</div>
+</div>
+<br/>
+<div id="roo_asset_meters">
+<label for="_meters_id">Meters:</label>
+<div class="box" id="_meters_id">
+<c:out value="${asset.meters}"/>
+</div>
+</div>
+<br/>
+</c:if>
+<c:if test="${empty asset}">
+<spring:message arguments="${entity_label}" code="entity.not.found.single"/>
+</c:if>
+</div>
+</div>

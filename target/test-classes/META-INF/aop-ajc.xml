@@ -1,0 +1,21 @@
+<aspectj>
+<aspects>
+<aspect name="at.volitsol.pems.domain.AssetDataOnDemand_Roo_Configurable"/>
+<aspect name="at.volitsol.pems.domain.FacilityIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="at.volitsol.pems.domain.LocationDataOnDemand_Roo_Configurable"/>
+<aspect name="at.volitsol.pems.domain.LocationDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="at.volitsol.pems.domain.MeterDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="at.volitsol.pems.domain.LocationIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="at.volitsol.pems.domain.FacilityDataOnDemand_Roo_Configurable"/>
+<aspect name="at.volitsol.pems.domain.AssetDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="at.volitsol.pems.domain.FacilityIntegrationTest_Roo_Configurable"/>
+<aspect name="at.volitsol.pems.domain.AssetIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="at.volitsol.pems.domain.AssetIntegrationTest_Roo_Configurable"/>
+<aspect name="at.volitsol.pems.domain.FacilityDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="at.volitsol.pems.domain.MeterDataOnDemand_Roo_Configurable"/>
+<aspect name="at.volitsol.pems.domain.MeterIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="at.volitsol.pems.domain.LocationIntegrationTest_Roo_Configurable"/>
+<aspect name="at.volitsol.pems.domain.MeterIntegrationTest_Roo_Configurable"/>
+</aspects>
+</aspectj>
+

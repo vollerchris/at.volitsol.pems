@@ -1,0 +1,40 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+<jsp:output omit-xml-declaration="yes"/>
+<script type="text/javascript">dojo.require('dijit.TitlePane');</script>
+<div id="_title_div">
+<spring:message code="label.facility" var="entity_label"/>
+<spring:message arguments="${entity_label}" code="entity.update" var="title_msg"/>
+<script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_title_div', widgetType : 'dijit.TitlePane', widgetAttrs : {title: '${title_msg}'}})); </script>
+<spring:url value="/facility/${facility.id}" var="form_url"/>
+<form:form action="${form_url}" method="PUT" modelAttribute="facility">
+<form:errors cssClass="errors" delimiter="&lt;p/&gt;"/>
+<div id="roo_facility_facilityName">
+<label for="_facilityName_id">Facility Name:</label>
+<form:input cssStyle="width:250px" id="_facilityName_id" maxlength="30" path="facilityName" size="0"/>
+<br/>
+<form:errors cssClass="errors" id="_facilityName_error_id" path="facilityName"/>
+<spring:message arguments="Facility Name" code="field.invalid" var="field_invalid"/>
+<spring:message code="field.required" var="field_required"/>
+<spring:message argumentSeparator="," arguments="Facility Name," code="field.simple.validation" var="field_validation"/>
+<script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_facilityName_id', widgetType : 'dijit.form.ValidationTextBox', widgetAttrs : {promptMessage: '${field_validation}', invalidMessage: '${field_invalid}', required : false}})); </script>
+</div>
+<br/>
+<div id="roo_facility_locations">
+<c:if test="${not empty locations}">
+<label for="_locations_id">Locations:</label>
+<form:select cssStyle="width:250px" id="_locations_id" path="locations">
+<form:options itemValue="id" items="${locations}"/>
+</form:select>
+</c:if>
+</div>
+<br/>
+<div class="submit" id="roo_facility_submit">
+<spring:message code="button.update" var="update_button"/>
+<script type="text/javascript">Spring.addDecoration(new Spring.ValidateAllDecoration({elementId:'proceed', event:'onclick'}));</script>
+<input id="proceed" type="submit" value="${update_button}"/>
+</div>
+<form:hidden id="_id_id" path="id"/>
+<form:hidden id="_version_id" path="version"/>
+</form:form>
+</div>
+</div>

@@ -1,0 +1,28 @@
+// Spring Roo 1.0.2.RELEASE [rev 638] log opened at 2010-05-03 18:19:42
+project --topLevelPackage at.volitsol.pems --projectName PEMS --java 5
+// Spring Roo 1.0.2.RELEASE [rev 638] log closed at 2010-05-03 18:19:42
+// Spring Roo 1.0.2.RELEASE [rev 638] log opened at 2010-05-03 18:19:45
+hint
+persistence setup --database ORACLE --provider HIBERNATE
+hint
+entity --class ~.domain.Meter --testAutomatically 
+hint
+field string --fieldName meterName
+// [failed] field number --fieldName value --type java.lang.Double
+field number --fieldName meterValue --type java.lang.Double
+entity --class ~.domain.Asset --testAutomatically 
+field string assetName
+field set --fieldName meters --element at.volitsol.pems.domain.Meter
+entity --class ~.domain.Location --testAutomatically 
+field string --fieldName locationName
+field reference --fieldName assets --type ~.domain.Asset
+entity --class ~.domain.facility  --testAutomatically 
+field string facilityName 
+field set --fieldName locations --element ~.domain.Location
+hint
+hint controllers
+controller all --package ~.web
+perform tests
+// Spring Roo 1.0.2.RELEASE [rev 638] log closed at 2010-05-03 20:13:06
+// Spring Roo 1.0.2.RELEASE [rev 638] log opened at 2010-05-04 19:48:24
+perform tests

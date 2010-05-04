@@ -1,0 +1,25 @@
+<aspectj>
+<aspects>
+<aspect name="at.volitsol.pems.domain.Location_Roo_ToString"/>
+<aspect name="at.volitsol.pems.domain.Asset_Roo_ToString"/>
+<aspect name="at.volitsol.pems.domain.Asset_Roo_Configurable"/>
+<aspect name="at.volitsol.pems.domain.Facility_Roo_Configurable"/>
+<aspect name="at.volitsol.pems.web.LocationController_Roo_Controller"/>
+<aspect name="at.volitsol.pems.domain.Location_Roo_JavaBean"/>
+<aspect name="at.volitsol.pems.domain.Meter_Roo_Configurable"/>
+<aspect name="at.volitsol.pems.web.MeterController_Roo_Controller"/>
+<aspect name="at.volitsol.pems.domain.Facility_Roo_JavaBean"/>
+<aspect name="at.volitsol.pems.domain.Asset_Roo_Entity"/>
+<aspect name="at.volitsol.pems.domain.Facility_Roo_Entity"/>
+<aspect name="at.volitsol.pems.domain.Asset_Roo_JavaBean"/>
+<aspect name="at.volitsol.pems.web.FacilityController_Roo_Controller"/>
+<aspect name="at.volitsol.pems.domain.Meter_Roo_ToString"/>
+<aspect name="at.volitsol.pems.web.AssetController_Roo_Controller"/>
+<aspect name="at.volitsol.pems.domain.Facility_Roo_ToString"/>
+<aspect name="at.volitsol.pems.domain.Meter_Roo_JavaBean"/>
+<aspect name="at.volitsol.pems.domain.Location_Roo_Entity"/>
+<aspect name="at.volitsol.pems.domain.Meter_Roo_Entity"/>
+<aspect name="at.volitsol.pems.domain.Location_Roo_Configurable"/>
+</aspects>
+</aspectj>
+
